@@ -3,7 +3,7 @@ import Exa from 'exa-js';
 
 const exa = new Exa(process.env.EXA_API_KEY);
 
-export const wishgarden = async (prompt) => {
+export const domain = async (prompt, domain) => {
     try {
         const response = await exa.searchAndContents(
             `citations for a blog post on ${prompt}`,
@@ -12,7 +12,7 @@ export const wishgarden = async (prompt) => {
                 useAutoprompt: true,
                 numResults: 5,
                 text: true,
-                includeDomains: ["https://www.wishgardenherbs.com/"],
+                includeDomains: [domain],
             }
         );
 
