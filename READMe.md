@@ -57,7 +57,8 @@ node main.js /script-name/ /your-parameters/
 ```
 
 ## Script Directory
-| Script Name   | Script Purpose                     | Script Parameters   | Sample Command                            |
-|---------------|------------------------------------|---------------------|-------------------------------------------|
-| search        | Run a basic query                  | "your query"        | node main.js search "hottest AI startups" |
-| citations      | Find citations for blog posts     | "topic of choice"   | node main.js citations "fast fashion"     |
+| Script Name   | Script Purpose                                | Script Parameters   | Sample Command                            |
+|---------------|-----------------------------------------------|---------------------|-------------------------------------------|
+| search        | Run a basic query                             | "your query"        | node main.js search "hottest AI startups" |
+| citations     | Find citations for blog posts                 | "topic of choice"   | node main.js citations "fast fashion"     |
+| wishgarden    | Find citations from wishgarden blog posts     | "topic of choice"   | node main.js wishgarden "lavender"        |

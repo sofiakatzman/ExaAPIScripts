@@ -1,5 +1,6 @@
 import { search } from './scripts/search.js';
 import { citations } from './scripts/citations.js';
+import { wishgarden } from './scripts/wishgarden.js';
 
 // Extract parameters from command
 const script = process.argv[2]; 
@@ -14,8 +15,12 @@ switch (script) {
         citations(parameter || 'fast fashion');
         break;
 
+    case 'wishgarden':
+        wishgarden(parameter || 'wellness');
+        break;
+
     default:
         console.error('Unknown script. Usage: node main.js <script> <parameter>');
-        console.error('Available scripts: search, citations');
+        console.error('Available scripts: search, citations, wishgarden');
         console.error('Sample command: node main.js citations "fast fashion"');
 }
