@@ -1,7 +1,7 @@
 import { search } from './scripts/search.js';
 
 const script = process.argv[2]; // Second Parameter: Script Name
-const parameter = process.argv[3]; // Second Parameter: Script Name
+const parameter = process.argv[3]; // Second Parameter: Script Parameter
 
 if (script === 'search') {
     search(parameter || 'hottest AI startups');
