@@ -1,11 +1,19 @@
 import { search } from './scripts/search.js';
+import { citations } from './scripts/citations.js';
 
 const script = process.argv[2]; // Second Parameter: Script Name
-const parameter = process.argv[3]; // Second Parameter: Script Parameter
+const parameter = process.argv[3]; // Third Parameter: Script Parameter
 
-if (script === 'search') {
-    search(parameter || 'hottest AI startups');
-} else {
-    console.error('Unknown script. Usage: node main.js <script> <prompt>');
-    console.error('Available scripts: search');
+switch (script) {
+    case 'search':
+        search(parameter || 'hottest AI startups');
+        break;
+
+    case 'citations':
+        citations(parameter || 'default citation topic');
+        break;
+
+    default:
+        console.error('Unknown script. Usage: node main.js <script> <parameter>');
+        console.error('Available scripts: search, citations');
 }
