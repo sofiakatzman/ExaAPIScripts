@@ -16,7 +16,7 @@ Ensure the following are installed on your system:
 ### 2. Clone the Repository
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your-repo-name/exa-api-project.git
+git clone https://github.com/your-repo-name/exa-api-project.git 
 cd exa-api-project
 ```
 ---
@@ -59,7 +59,8 @@ node main.js /script-name/ /your-parameters/
 ## Script Directory
 | Script Name   | Script Purpose                                                     | Script Parameters            | Sample Command                                                            |
 |---------------|--------------------------------------------------------------------|------------------------------|---------------------------------------------------------------------------|
-| search        | Run a basic query                                                  | "your query"                 | node main.js search "hottest AI startups"                                 |
+| search        | Run a basic query                                                  | "your query"                 | node main.js search "best ai usecases"                                    |
 | citations     | Find citations for blog posts                                      | "topic of choice"            | node main.js citations "fast fashion"                                     |
 | domain        | Find citations from custom domain blog posts about specific topic  | "topic of choice" "domain"   | node main.js domain "lavender" "https://www.wishgardenherbs.com/"         |
 | wishgarden    | Find citations from wishgarden blog posts about specific topic     | "topic of choice"            | node main.js wishgarden "lavender"                                        |
+
