@@ -47,3 +47,16 @@ EXA_API_KEY=your_actual_api_key_here
 ```bash
 npm install dotenv
 ```
+
+
+### 6. Running Scripts
+- To run scripts, execute the command below from the root directory. Replace /script-name/ and /your-parameters/ with the appropriate script name and parameters.
+
+```bash
+node main.js /script-name/ /your-parameters/
+```
+
+## Script Directory
+| Script Name   | Script Purpose         | Script Parameters   | Sample Command                            |
+|---------------|------------------------|---------------------|-------------------------------------------|
+| search        | Run a basic query      | "your query"        | node main.js search "hottest AI startups" |
